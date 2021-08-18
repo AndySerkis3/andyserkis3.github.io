@@ -7195,6 +7195,6 @@ var FindProxyForURL = function(init, profiles) {
     "+ssh1080": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host) || host[host.length - 1] >= 0 && isInNet(host, "192.168.1.1", "255.255.0.0") || host[host.length - 1] >= 0 && isInNet(host, "172.18.21.1", "255.255.0.0")) return "DIRECT";
-        return "SOCKS5 172.18.21.188:1080; SOCKS 172.18.21.188:1080";
+        return "SOCKS5 172.18.18.188:1080; SOCKS 172.18.18.188:1080";
     }
 });
